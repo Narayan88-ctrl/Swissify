@@ -1,0 +1,36 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Red Background (Swiss Inspiration) -->
+  <rect width="200" height="200" rx="24" fill="#D32F2F"/>
+
+  <!-- White Cross (Stylized - Legal Variant) -->
+  <rect x="85" y="45" width="30" height="110" rx="4" fill="#FFFFFF" opacity="0.92"/>
+  <rect x="45" y="85" width="110" height="30" rx="4" fill="#FFFFFF" opacity="0.92"/>
+
+  <!-- Glowing ring (AI intelligence aura) -->
+  <circle cx="100" cy="100" r="80"
+          stroke="url(#grad1)" stroke-width="3" fill="none" opacity="0.35"/>
+  <defs>
+    <linearGradient id="grad1" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0%" stop-color="#ffffff" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#00e5ff" stop-opacity="0.5"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Letter N (Signature) -->
+  <text x="100" y="138"
+        text-anchor="middle"
+        font-family="Poppins, Helvetica, Arial, sans-serif"
+        font-weight="800"
+        font-size="90"
+        fill="#FFFFFF"
+        opacity="0.25"
+        letter-spacing="2">N</text>
+
+  <!-- Subtext (optional) -->
+  <text x="100" y="185"
+        text-anchor="middle"
+        font-family="Poppins, Helvetica, Arial, sans-serif"
+        font-size="18"
+        fill="#FFFFFF"
+        opacity="0.8">SWISSIFY ENGINE</text>
+</svg>

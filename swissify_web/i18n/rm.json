@@ -1,0 +1,14 @@
+{
+  "app_title": "SWISSIFY ENGINE",
+  "swiss_standard": "Swiss Standard",
+  "language": "Language",
+  "input_title": "Swissify Text",
+  "input_hint": "Paste any German text; we convert to Swiss standard (numbers, quotes, lexicon, orthography).",
+  "convert_now": "Convert Now",
+  "history": "History",
+  "teacher_login": "Teacher Login",
+  "docx_hint": "*.txt or *.docx → Download Swissified DOCX.",
+  "pdf_hint": "*.txt or existing *.pdf → Download Swissified PDF.",
+  "footer_left": "Engine: FastAPI",
+  "footer_right": "Web: Jinja"
+}

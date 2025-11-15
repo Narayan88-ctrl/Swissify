@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Swissify School – Dashboard</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <span class="small">👩‍🏫 {{user.name}} <span class="badge">{{user.role}}</span></span>
+      <a class="btn gray" href="/logout">Logout</a>
+      {% if user.role == "admin" %}<a class="btn link" href="/admin">Admin</a>{% endif %}
+    </div>
+
+    <h1>Swissify School – Converter</h1>
+
+    <form class="card" method="post" action="/convert_text">
+      <label>Enter or paste German text</label>
+      <textarea name="text" placeholder="Der Schüler geht zur Schule. Die Straße ist groß.">{{input_text or ""}}</textarea>
+      <div style="margin-top:10px">
+        <button class="btn">Swissify Text</button>
+      </div>
+    </form>
+
+    <div class="card">
+      <h3>Swissified Output</h3>
+      {% if error %}
+        <div class="small" style="color:#b91c1c">Engine error: {{error}}</div>
+      {% elif output %}
+        <pre style="white-space:pre-wrap">{{output}}</pre>
+      {% else %}
+        <div class="small">No output yet.</div>
+      {% endif %}
+    </div>
+
+  </div>
+</body>
+</html>

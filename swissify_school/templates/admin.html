@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Swissify – Admin Panel</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <a class="btn gray" href="/">← Home</a>
+      <a class="btn" href="/logout">Logout</a>
+    </div>
+
+    <h1>🛠️ Swissify – Admin Panel</h1>
+
+    <div class="card">
+      <h3>Add Teacher</h3>
+      <form method="post" action="/admin/add" class="row">
+        <input name="name" placeholder="username (e.g., nora)" required>
+        <div style="display:flex;gap:10px">
+          <input name="password" placeholder="password" required style="flex:1">
+          <button class="btn">Add</button>
+        </div>
+      </form>
+    </div>
+
+    <div class="card">
+      <h3>Existing Teachers</h3>
+      <table class="table">
+        <thead><tr><th>Username</th><th>Actions</th></tr></thead>
+        <tbody>
+          {% for r in rows %}
+          <tr>
+            <td>{{r.name}}</td>
+            <td>
+              <form method="post" action="/admin/delete" style="display:inline-flex;gap:8px">
+                <input type="hidden" name="name" value="{{r.name}}">
+                <button class="btn" style="background:#ef4444">Delete</button>
+              </form>
+            </td>
+          </tr>
+          {% endfor %}
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+</body>
+</html>

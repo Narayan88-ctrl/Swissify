@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ t["brand"] }} — {{ t["swiss_standard"] }}</title>
+  <link rel="stylesheet" href="/static/style.css" />
+  <script defer src="/static/main.js"></script>
+</head>
+<body>
+  <!-- TOP BAR -->
+  <header class="topbar">
+    <div class="brand caps">
+  <strong>SWISSIFY ENGINE</strong>
+  <span class="subtle">— {{ t["swiss_standard"] }}</span>
+</div>
+
+    <nav class="top-actions">
+      <a class="link" href="/login?lang={{ lang }}">{{ t["teacher_login"] }}</a>
+      <form method="get" action="/" class="lang-form" style="display:flex;gap:.4rem;align-items:center;">
+        <label for="langSel">{{ t["language"] }}</label>
+        <select id="langSel" name="lang" onchange="this.form.submit()">
+          <option value="en" {{ 'selected' if lang=='en' else '' }}>EN</option>
+          <option value="de" {{ 'selected' if lang=='de' else '' }}>DE</option>
+        </select>
+      </form>
+    </nav>
+  </header>
+
+  <main class="container">
+    <!-- TWO-COLUMN AREA -->
+    <section class="twocol">
+      <!-- LEFT: INPUT -->
+      <div class="card">
+        <div class="card-head">
+          <h2>{{ t["input_title"] }}</h2>
+          <p class="muted">{{ t["input_hint"] }}</p>
+        </div>
+        <form method="post" action="/convert_text?lang={{ lang }}">
+          <textarea name="text" rows="9" placeholder="Type or paste text here…">{{ text }}</textarea>
+          <div class="row">
+            <button class="btn primary" type="submit">{{ t["convert_now"] }}</button>
+            <button class="btn" type="button" id="clearInput">{{ t["clear"] }}</button>
+          </div>
+        </form>
+      </div>
+
+      <!-- RIGHT: OUTPUT -->
+      <div class="card">
+        <div class="card-head">
+          <h2>{{ t["output_title"] }}</h2>
+          <p class="muted">{{ t["output_hint"] }}</p>
+        </div>
+        <textarea id="outBox" rows="9" readonly placeholder="Output will appear here…">{{ output }}</textarea>
+        <div class="row">
+          <button class="btn" id="dlTxt">{{ t["download_txt"] }}</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPORTS -->
+    <section class="export-grid">
+      <div class="export-card">
+        <h4>{{ t["docx_title"] }}</h4>
+        <form method="post" action="/convert_docx?lang={{ lang }}" enctype="multipart/form-data">
+          <input class="file" type="file" name="file" accept=".txt,.docx" />
+          <button class="btn primary" type="submit">{{ t["convert_docx"] }}</button>
+          <div class="hint">{{ t["docx_hint"] }}</div>
+        </form>
+      </div>
+
+      <div class="export-card">
+        <h4>{{ t["pdf_title"] }}</h4>
+        <form method="post" action="/convert_pdf?lang={{ lang }}" enctype="multipart/form-data">
+          <input class="file" type="file" name="file" accept=".txt,.pdf" />
+          <button class="btn primary" type="submit">{{ t["convert_pdf"] }}</button>
+          <div class="hint">{{ t["pdf_hint"] }}</div>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="left caps">{{ t["footer_left"] }}</div>
+    <div class="right">{{ t["footer_right"] }}</div>
+  </footer>
+</body>
+</html>

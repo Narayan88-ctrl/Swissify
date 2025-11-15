@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head><meta charset="utf-8"/><meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link rel="stylesheet" href="/static/style.css" /></head>
+<body>
+  <header class="topbar">
+    <div class="brand"><span class="logo">🇨🇭</span><strong class="caps">SWISSIFY ENGINE</strong></div>
+  </header>
+  <main class="container">
+    <h2>{{ t["history_title"] }}</h2>
+    <div style="background:var(--panel); padding:12px; border-radius:8px;">
+      {% for r in records %}
+        <div style="padding:8px;border-bottom:1px dashed rgba(255,255,255,0.02)">
+          <strong>{{ r.kind }}</strong> — {{ r.lang }} — {{ r.snippet }} <small style="opacity:.6">({{ r.ts }})</small>
+        </div>
+      {% else %}
+        <div class="muted">No history</div>
+      {% endfor %}
+    </div>
+    <p style="margin-top:16px"><a href="/?lang={{ lang }}" class="btn">Back</a></p>
+  </main>
+</body>
+</html>

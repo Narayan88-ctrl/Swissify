@@ -1,0 +1,44 @@
+[
+  {
+    "type": "text",
+    "timestamp": "2025-10-29 18:35:33",
+    "input_preview": "Der Fußball ist groß.\r\nDie Straße ist schön.\r\nDas Krankenhaus ist weit weg, aber das Fahrrad ist neu.\r\nIch mag Brötchen …",
+    "output_file": "history/alice/swissified_20251029_183533.txt",
+    "download_name": "swissified_20251029_183533.txt"
+  },
+  {
+    "type": "text",
+    "timestamp": "2025-10-29 18:19:36",
+    "input_preview": "Der Fußball ist groß.\r\nDie Straße ist schön.\r\nDas Krankenhaus ist weit weg, aber das Fahrrad ist neu.\r\nIch mag Brötchen …",
+    "output_file": "history/alice/swissified_20251029_181936.txt",
+    "download_name": "swissified_20251029_181936.txt"
+  },
+  {
+    "type": "text",
+    "timestamp": "2025-10-29 17:48:30",
+    "input_preview": "Der Fußball ist groß. \r\nDie Straße ist schön.\r\nDas Krankenhaus ist weit weg, aber das Fahrrad ist neu.\r\nIch mag Brötchen…",
+    "output_file": "history/alice/swissified_20251029_174830.txt",
+    "download_name": "swissified_20251029_174830.txt"
+  },
+  {
+    "type": "text",
+    "timestamp": "2025-10-29 14:40:27",
+    "input_preview": "hallo",
+    "output_file": "history/alice/swissified_20251029_144027.txt",
+    "download_name": "swissified_20251029_144027.txt"
+  },
+  {
+    "type": "text",
+    "timestamp": "2025-10-29 14:40:19",
+    "input_preview": "guten tag",
+    "output_file": "history/alice/swissified_20251029_144019.txt",
+    "download_name": "swissified_20251029_144019.txt"
+  },
+  {
+    "type": "text",
+    "timestamp": "2025-10-29 14:40:11",
+    "input_preview": "guten gag",
+    "output_file": "history/alice/swissified_20251029_144011.txt",
+    "download_name": "swissified_20251029_144011.txt"
+  }
+]

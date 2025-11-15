@@ -1,0 +1,8 @@
+{
+  "teachers": {
+    "alice": "$2b$12$t.jqdBK14RVBY08/nJUCbuNGCTIqfmfRiW0m2jheLJLg5dVtPDr5y",
+    "bruno": "$2b$12$thSGRbR6j3Mho2piVlXJMedrHhAOKGEQ50Z.w5IeIkb9edXMkBkVq",
+    "carla": "$2b$12$5fQT14jDCydiyLppRNTTrOxWC8BaJEYk6eRUX29nHf/Vd7LjUoBOa",
+    "Sunita": "$2b$12$hLBbZIPu7pHJBlQHtRGcLe1Lcc0TPMiWUljwPTVbVYgWmbtCizfBC"
+  }
+}

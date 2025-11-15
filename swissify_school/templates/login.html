@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <title>Swissify School – Login</title>
+  <link rel="stylesheet" href="/static/style.css"/>
+</head>
+<body>
+  <div class="container">
+    <h1>🔐 Teacher Login</h1>
+    {% if error %}<div class="card" style="border-left:4px solid #ef4444;color:#b91c1c">{{error}}</div>{% endif %}
+    <form method="post" action="/login" class="card" style="max-width:520px">
+      <label>Username</label>
+      <input name="username" placeholder="Sunita" required/>
+      <label style="margin-top:10px">Password</label>
+      <input type="password" name="password" placeholder="••••••" required/>
+      <div style="margin-top:12px;display:flex;gap:10px">
+        <button class="btn">Login</button>
+        <a class="btn gray" href="/">Home</a>
+      </div>
+    </form>
+  </div>
+</body>
+</html>

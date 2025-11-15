@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="{{ lang }}">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>{{ t["teacher_login"] }} — {{ t["brand"] }}</title>
+  <link rel="stylesheet" href="/static/style.css" />
+</head>
+<body class="center">
+  <div class="login-card">
+    <h2>{{ t["teacher_login"] }}</h2>
+    <form method="post" action="/login?lang={{ lang }}">
+      <input name="username" placeholder="username" />
+      <input name="password" type="password" placeholder="password" />
+      <button class="btn primary" type="submit">Login</button>
+    </form>
+    <a class="link" href="/?lang={{ lang }}">← Back</a>
+  </div>
+</body>
+</html>

@@ -1,0 +1,17 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <!-- Red Swiss background -->
+  <rect width="200" height="200" fill="#d32f2f" rx="15" ry="15"/>
+  
+  <!-- White Swiss cross -->
+  <rect x="85" y="40" width="30" height="120" fill="#ffffff"/>
+  <rect x="40" y="85" width="120" height="30" fill="#ffffff"/>
+  
+  <!-- Translucent 'N' in center -->
+  <text x="100" y="135"
+        text-anchor="middle"
+        font-size="110"
+        font-weight="900"
+        fill="#ffffff"
+        opacity="0.25"
+        font-family="Helvetica, Arial, sans-serif">N</text>
+</svg>

@@ -1,0 +1,12 @@
+<div class="lang-switch">
+  <form method="get" action="" style="display:inline;">
+    <label class="muted">{{ t.lang_label }}</label>
+    <select name="lang" onchange="this.form.submit()">
+      <option value="en" {{ 'selected' if lang=='en' else '' }}>EN</option>
+      <option value="de" {{ 'selected' if lang=='de' else '' }}>DE</option>
+      <option value="fr" {{ 'selected' if lang=='fr' else '' }}>FR</option>
+      <option value="it" {{ 'selected' if lang=='it' else '' }}>IT</option>
+      <option value="rm" {{ 'selected' if lang=='rm' else '' }}>RM</option>
+    </select>
+  </form>
+</div>

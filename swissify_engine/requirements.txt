@@ -1,0 +1,4 @@
+fastapi==0.120.2
+uvicorn==0.38.0
+pydantic==2.12.3
+PyYAML==6.0.2

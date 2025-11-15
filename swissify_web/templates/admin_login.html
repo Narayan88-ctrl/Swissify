@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Admin Login – Swissify</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 420px; margin: 100px auto; text-align:center; }
+  input { width:100%; padding:10px; margin:10px 0; border:1px solid #ccc; border-radius:6px; }
+  button { padding:10px 16px; background:#cc0000; color:#fff; border:none; border-radius:6px; cursor:pointer; }
+  p { color:red; }
+</style>
+</head>
+<body>
+<h2>🛡️ Admin Login</h2>
+<form action="/admin/login" method="post">
+  <input type="password" name="secret" placeholder="Admin secret" required>
+  <button type="submit">Login</button>
+</form>
+{% if error %}<p>{{ error }}</p>{% endif %}
+</body>
+</html>

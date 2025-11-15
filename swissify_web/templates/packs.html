@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <title>Swissify – Packs</title>
+  <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="topbar">
+      <h1>Swissify Engine – Packs</h1>
+      <div class="nav">
+        <a href="/">← Converter</a>
+        <a href="/history">📖 View History</a>
+        <a href="/login">🔐 Teacher Login</a>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="sub">Aktive Wortlisten/Regeln ein-/ausschalten (wirken sofort).</div>
+      {% if saved %}<div class="small" style="margin-bottom:10px;color:green">Gespeichert ✓</div>{% endif %}
+      <form action="/packs" method="post">
+        {% for p in all %}
+          <label class="pill">
+            <input type="checkbox" name="packs" value="{{ p }}" {% if p in enabled %}checked{% endif %}> {{ p }}
+          </label>
+        {% endfor %}
+        <div style="margin-top:12px">
+          <button class="btn" type="submit">Save Packs</button>
+        </div>
+      </form>
+      <div class="small" style="margin-top:12px">
+        Aktive Regeln: {{ count_rules }} &nbsp;|&nbsp; Standard: {{ default_enabled | join(', ') }}
+      </div>
+    </div>
+  </div>
+</body>
+</html>

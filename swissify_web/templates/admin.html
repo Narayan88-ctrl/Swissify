@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Swissify – Admin</title>
+<style>
+  body { font-family: Arial, sans-serif; max-width: 820px; margin: 40px auto; color:#111; }
+  h2 { margin-bottom: 8px; }
+  .btn { padding:8px 12px; background:#cc0000; color:#fff; border:none; border-radius:6px; cursor:pointer; }
+  input { padding:8px; border:1px solid #ccc; border-radius:6px; }
+  table { width:100%; border-collapse: collapse; margin-top:16px; }
+  td, th { padding:8px; border-bottom:1px solid #eee; }
+  .right { text-align:right; }
+  a { color:#cc0000; text-decoration:none; }
+</style>
+</head>
+<body>
+{% include "_lang_select.html" %}
+
+<h1>🛠️ {{ t.admin_title }}</h1>
+
+<div class="content">
+  <p>{{ t.admin_welcome }}</p>
+  <a href="/packs?lang={{ lang }}">📦 {{ t.manage_packs }}</a> |
+  <a href="/history?lang={{ lang }}">📜 {{ t.history_link }}</a> |
+  <a href="/logout?lang={{ lang }}">🚪 {{ t.logout }}</a>
+</div>
+
+<div style="display:flex; justify-content:space-between; align-items:center;">
+  <h2>🛠️ Swissify – Admin Panel</h2>
+  <div>
+    <a href="/" class="btn" style="background:#777;">← Home</a>
+    <a href="/admin/logout" class="btn">Logout</a>
+  </div>
+</div>
+
+<h3>Add Teacher</h3>
+<form action="/admin/add_teacher" method="post" style="display:flex; gap:8px;">
+  <input type="text" name="username" placeholder="username (e.g., nora)" required>
+  <input type="text" name="password" placeholder="password" required>
+  <button class="btn" type="submit">Add</button>
+</form>
+
+<h3 style="margin-top:24px;">Existing Teachers</h3>
+<table>
+  <tr><th>Username</th><th class="right">Actions</th></tr>
+  {% for u in users %}
+  <tr>
+    <td>{{ u }}</td>
+    <td class="right">
+      <form action="/admin/delete_teacher" method="post" style="display:inline;">
+        <input type="hidden" name="username" value="{{ u }}">
+        <label style="font-size:12px; color:#555; margin-right:6px;">
+          <input type="checkbox" name="wipe" value="yes"> wipe history
+        </label>
+        <button class="btn" onclick="return confirm('Delete {{ u }}?')">Delete</button>
+      </form>
+    </td>
+  </tr>
+  {% endfor %}
+</table>
+
+</body>
+</html>

@@ -1,0 +1,14 @@
+[
+  {
+    "kind": "login",
+    "name": "bruno"
+  },
+  {
+    "kind": "login",
+    "name": "alice"
+  },
+  {
+    "kind": "login",
+    "name": "alice"
+  }
+]

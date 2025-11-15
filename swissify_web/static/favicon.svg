@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 256 256">
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop offset="0" stop-color="#d11a2a"/>
+      <stop offset="1" stop-color="#a80f1e"/>
+    </linearGradient>
+  </defs>
+  <rect width="256" height="256" rx="48" fill="url(#g)"/>
+  <g fill="#fff">
+    <!-- Swiss cross -->
+    <rect x="112" y="52" width="32" height="152" rx="6"/>
+    <rect x="52" y="112" width="152" height="32" rx="6"/>
+  </g>
+  <!-- subtle S mark -->
+  <path d="M88 188c18 16 62 16 80-2" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="10" stroke-linecap="round"/>
+</svg>
