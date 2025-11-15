@@ -1,3 +1,29 @@
+## 💰 Pricing – Swissify
+
+Swissify is designed to be affordable for Swiss schools and Gemeinden, while
+still reflecting the value it creates in time saved, clarity, and trust.
+
+### 🎓 For Schools
+
+| Plan              | Price (CHF / month) | For who?                        | What you get                                                      |
+|-------------------|---------------------|---------------------------------|-------------------------------------------------------------------|
+| School Basic      | 49                  | 1 school (up to 5 teachers)    | Text → Swiss German standard, PDF/DOCX support, teacher-friendly UI |
+| School Plus       | 79                  | 1 school (unlimited teachers)  | Everything in Basic + document templates (letters, rules, exams)  |
+
+### 🏘️ For Gemeinden / Verwaltung
+
+| Plan                | Price (CHF / month) | For who?                         | What you get                                                      |
+|---------------------|---------------------|----------------------------------|-------------------------------------------------------------------|
+| Gemeinde Standard   | 199                 | Small / mid Gemeinde            | Standardized letters & notices, form texts, rule summaries       |
+| Gemeinde Pro        | 299                 | Larger Gemeinde / Stadt         | Everything in Standard + custom text modules, priority support   |
+
+### 🌍 For Integration Centers / NGOs
+
+| Plan                  | Price (CHF / month) | For who?                            | What you get                                                |
+|-----------------------|---------------------|-------------------------------------|-------------------------------------------------------------|
+| Integration Basic     | 99                  | Integration courses, language hubs  | Course material support, easy Swiss German texts           |
+| Integration Advanced  | 249                 | Larger centers / multiple classes   | Multi-class support, document packs, basic analytics       |
+
 ## 📄 License Model (Dual License)
 
 This project uses a **Dual License** structure to support both open innovation and
