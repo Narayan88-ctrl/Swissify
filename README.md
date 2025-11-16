@@ -112,15 +112,15 @@ MongoDB, Elastic, MySQL, Qt, and other global open-source/commercial hybrids.
 ---
 
 ---
-
 ## 🎥 Live Demo
 
 Swissify in action — full demo videos for schools, teachers, and Gemeinde.
 
 - 🇬🇧 English Demo:  
-  https://drive.google.com/file/d/1N2eInqi6OQ_KtnuaX_QkSUqyqUEKjoty/view  
-- 🇩🇪 German Demo:  
   https://drive.google.com/file/d/1srn0IM4_WM_q1k0BSeodBdOe8tVHZ9N0/view  
+
+- 🇩🇪 German Demo:  
+  https://drive.google.com/file/d/1N2eInqi6OQ_KtnuaX_QkSUyqUEKjoty/view    
 
 Both demos show:
 - Text → Swiss Standard German conversion  
