@@ -111,5 +111,67 @@ MongoDB, Elastic, MySQL, Qt, and other global open-source/commercial hybrids.
 
 ---
 
+---
+
+## 🎥 Live Demo
+
+Swissify in action — full demo videos for schools, teachers, and Gemeinde.
+
+- 🇬🇧 English Demo:  
+  https://drive.google.com/file/d/1N2eInqi6OQ_KtnuaX_QkSUqyqUEKjoty/view  
+- 🇩🇪 German Demo:  
+  https://drive.google.com/file/d/1srn0IM4_WM_q1k0BSeodBdOe8tVHZ9N0/view  
+
+Both demos show:
+- Text → Swiss Standard German conversion  
+- PDF & DOCX conversion  
+- Teacher UI  
+- Rules engine  
+- Real Swiss classroom + Gemeinde use cases  
+
+---
+
+## 🧪 Pilot Program (For Schools & Gemeinde)
+
+Swissify offers a **30-day Pilot Program** for selected Swiss institutions.
+
+**Includes:**
+- Full access to the Swissify Web Engine  
+- PDF/DOCX conversion  
+- School/Gemeinde rule packs  
+- Teacher login tools  
+- Priority support  
+
+**To request pilot access:**
+📧 Email: *your-email-here*  
+⏳ Response time: **within 24 hours**
+
+---
+
+## 🌍 Vision — Why Swissify Matters
+
+Switzerland has 26 cantons, 4 languages, and thousands of schools and Gemeinden  
+that struggle with *inconsistent spelling, rules, and document standards.*
+
+Swissify fixes this by providing:
+
+- 🧠 A national-level **Swiss Standard engine**  
+- 📄 Unified style for **letters, notices, rules, exams, and legal documents**  
+- 🎓 Better clarity for teachers & parents  
+- 🏛 More efficient communication for Gemeinden  
+
+Swissify’s long-term vision:
+
+> **“One Switzerland, one clear standard.  
+> From classroom papers to Gemeinde documents — automatically simplified.”**
+
+Swissify evolves into:
+- National integration tool  
+- Official Swiss standardization partner  
+- Multi-language Swiss engine (DE/FR/IT/RM)  
+- AI contract/document automation for public sector
+
+---
+
 **© 2025 — Narayan Ranabhat**  
 All rights reserved for commercial modules.
